@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Simple calculator created by HamzaBenerradi using Html/ Css/ JS">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" readonly id="holder">
+        <div>
+            <button value="*" onclick="append('*')" class="operators">x</button>
+            <button value="7" onclick="append('7')">7</button>
+            <button value="8" onclick="append('8')">8</button>
+            <button value="9" onclick="append('9')">9</button>
+        </div>
+        <div>
+            <button value="+" onclick="append('+')" class="operators">+</button>
+            <button value="4" onclick="append('4')">4</button>
+            <button value="5" onclick="append('5')">5</button>
+            <button value="6" onclick="append('6')">6</button>
+        </div>
+        <div>
+            <button value="-" onclick="append('-')" class="operators">-</button>
+            <button value="1" onclick="append('1')">1</button>
+            <button value="2" onclick="append('2')">2</button>
+            <button value="3" onclick="append('3')">3</button>
+        </div>
+        <div>
+            <button value="/" onclick="append('/')" class="operators">/</button>
+            <button value="0" onclick="append('0')">0</button>
+            <button value="." onclick="append('.')">.</button>
+            <button value="=" id="calc" onclick="calc()">=</button>
+        </div>
+        <div>
+        </div>
+        <button value="c" id="clear" class="operators">c</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
